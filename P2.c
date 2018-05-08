@@ -1,3 +1,6 @@
+// Maria Luiza Camargos Borges Carneiro
+// 11721EBI002
+
 #include <stdio.h>
 
 void decimal(int base)
