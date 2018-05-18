@@ -13,16 +13,16 @@ int main()
 	do
 	{
 		printf("Bem vindo(a) ao Menu! \nInsira: \n1 para Codificar. \n2 para Descodificar. \n3 para Sair.\nSua opcao e: ");
-			scanf("%d", &num);
-			getchar();
+		scanf("%d", &num);
+		getchar();
 	}
 	while(num != 1 && num != 2 && num != 3);
 	i = 0;
-		switch(num)
-		{
+	switch(num)
+	{
 		case 1:
 			for(i = 0; i < 256; i++)
-				mens[i] = '\0';
+			mens[i] = '\0';
 			printf("\nInsira uma mensagem: ");
 			fgets(mens, 256, stdin);
 			for(a = 0; mens[a] != '\0'; a++);	
@@ -31,7 +31,7 @@ int main()
 			for(i = 0; i < a; i++)	
 			{
 				if(*(q+i) != 0 )
-					printf("%i ", *(q+i));
+				printf("%i ", *(q+i));
 			} 
 			break;
 		case 2:
@@ -41,7 +41,8 @@ int main()
 			a = 0;
 			printf("\nInsira uma sequencia de numeros: ");
 			do
-			{	scanf("%d", &a);
+			{
+				scanf("%d", &a);
 	 			getchar();
 				str[i] = a;
 				i++;
@@ -58,8 +59,7 @@ int main()
 		default: 
 			break;
 		}
-		printf("\n\n");
-	}
+	printf("\n\n");}
 	while(num != 3);
 	return 0;
 }
