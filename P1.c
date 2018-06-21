@@ -8,7 +8,7 @@ int main()
 	char bits[256];
 	int estado, aut, i;
 	printf("Insira um numero binario: ");
-	scanf("%s", &bits);
+	scanf("%s", bits);
 	for(i = 0; bits [i] != '\0'; i++)
 	{
 		if (estado == 0 && bits [i] == '1')
