@@ -53,7 +53,7 @@ void binario(int base)
 	int res1[256], res2[256], num, i, j=0, variavel, n = 1, soma = 0, k = 0;
 	char res[256];
 	printf("\nInsira o numero em binario para ser convertido: ");
-	scanf("%s", &res);
+	scanf("%s", res);
 	for(i= 0; res[i] != '\0'; i++);
 	i--;
 	k = i;
@@ -130,7 +130,7 @@ void hexadecimal(int base)
 	char res[256];
 	int res1[256], num, i, j = 0, variavel, n = 1, soma = 0, k = 0;
 	printf("\nInsira o numero em hexadecimal para ser convertido: ");
-	scanf("%s", &res);
+	scanf("%s", res);
 	for(i = 0; res[i] != '\0'; i++);
 	i--;
 	variavel = i;
@@ -153,7 +153,7 @@ void hexadecimal(int base)
 			{res1[i] = res1[i] - 48;}
 		i--;
 	}
-	while(i>=0);
+	while(i >= 0);
 	i = variavel;
 	do
 	{
@@ -198,7 +198,7 @@ void octal(int base)
 	char res[256];
 	int res1[256], num, i, j = 0, variavel, n = 1, soma = 0, k = 0;
 	printf("\nDigite o numero em octal para ser convertido: ");
-	scanf("%s", &res);
+	scanf("%s", res);
 	for(i = 0; res[i] != '\0'; i++);
 	i--;
 	variavel = i;
@@ -208,7 +208,7 @@ void octal(int base)
 		res[i] = res[i] - 48;
 		i--;
 	}
-	while(i>=0);
+	while(i >= 0);
 	i = variavel;
 	do
 	{
