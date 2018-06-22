@@ -8,7 +8,7 @@ int main()
 	char numero[256];
 	int x[256], i, j = 0, k = 0;
 	printf("Insira um numero: ");
-	scanf("%s", &numero);
+	scanf("%s", numero);
 	for(i = 0; numero[i] != '\0'; i++)
 	{
 		if(numero[i] > 47 && numero[i] < 58)
