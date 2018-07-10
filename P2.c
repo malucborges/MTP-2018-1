@@ -127,7 +127,12 @@ void binario(int base)
 
 void hexadecimal(int base)
 {
-	char res[256];
+	int hexa;
+	printf("\nInsira o numero em hexadecimal para ser convertido: ");
+	scanf("%X", &hexa);
+	printf("\nNumero convertido: %d", hexa);
+	
+	/* char res[256];
 	int res1[256], num, i, j = 0, variavel, n = 1, soma = 0, k = 0;
 	printf("\nInsira o numero em hexadecimal para ser convertido: ");
 	scanf("%s", res);
@@ -191,7 +196,7 @@ void hexadecimal(int base)
 		while(i >= 0);
 	}
 		printf("\n\n");
-}
+}*/}
 
 void octal(int base)
 {
