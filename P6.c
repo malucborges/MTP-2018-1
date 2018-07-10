@@ -11,8 +11,7 @@ int soma(int vet[20], int n)
 	{
 		int s;
 		s = soma (vet, n-1);
-		if(vet[n-1] > 0)
-			s = s + vet[n-1];
+		s = s + vet[n-1];
 		return (s);
 	}
 }
@@ -46,7 +45,7 @@ int main ()
 		if(vet[i] != 0)
 			p++;
 	}
-	sominha = (soma(vet, i));
+	sominha = (soma(vet, num));
 	printf("\nA media dos numeros e: %.1f", media(sominha, p));
 	return 0;
 }
